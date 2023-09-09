@@ -1,0 +1,421 @@
+:root {
+  /* height */
+  --height-header: 7.4375rem;
+  --height-header-top: 2.125rem;
+  --height-banner: 22.0625rem;
+  --height-banner-top: 14.6875rem;
+  --height-flashSale-img: 10.625rem;
+  --height-banner-img: 6.875rem;
+  --height-shopee-mail-bottom: 28.25rem;
+
+  /* color */
+  --header-color: #f53d2d;
+  --main-color: #fb6445;
+  --sub-color: #ee4d2d;
+  --sub-color-2: #d0011b;
+  /* text */
+  --text-color1: #555;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* height */
+.height-header {
+  height: var(--height-header);
+}
+
+.height-header-top {
+  height: var(--height-header-top);
+}
+
+.height-header-bottom {
+  height: calc(var(--height-header) - var(--height-header-top));
+}
+
+.height-banner {
+  height: var(--height-banner);
+}
+
+.height-banner-top {
+  height: var(--height-banner-top);
+}
+
+.height-banner-bottom {
+  height: calc(var(--height-banner) - var(--height-banner-top));
+}
+
+.height-directory-top,
+.height-flashSale-top {
+  height: 3.75rem;
+}
+
+.height-flashSale-bottom {
+  height: 15.5rem;
+}
+
+.height-directory-bottom {
+  height: 18.875rem;
+}
+
+.height-banner-img {
+  height: var(--height-banner-img);
+}
+
+.height-shope-mail_bottom {
+  height: var(--height-shopee-mail-bottom);
+}
+
+.h-16 {
+  height: 1rem;
+}
+
+.h-20 {
+  height: 1.25rem;
+}
+
+.h-290 {
+  height: 18.125rem;
+}
+
+/* width */
+.header-icon-width {
+  font-size: 1rem;
+}
+
+.w-1200 {
+  max-width: 1200px;
+}
+
+/* background */
+.bg-header {
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+/* color */
+.main-color {
+  background-color: var(--main-color);
+}
+
+.sub-color {
+  color: var(--sub-color);
+}
+
+.sub-color-2 {
+  color: var(--sub-color-2);
+}
+
+.text-color1 {
+  color: var(--text-color1);
+}
+
+/* text */
+.fz-10 {
+  font-size: 0.625rem;
+}
+
+.fz-12 {
+  font-size: 0.75rem;
+}
+
+.fz-13 {
+  font-size: 0.8125rem;
+}
+
+.fz-14 {
+  font-size: 0.875rem;
+}
+
+.fz-17 {
+  font-size: 1.0625rem;
+}
+
+.fz-18 {
+  font-size: 1.125rem;
+}
+
+/* hover */
+.nav-link:hover {
+  color: hsla(0, 0%, 100%, 0.7) !important;
+}
+
+/* input */
+.search-input::placeholder {
+  font-size: 0.815rem;
+}
+
+/* margin */
+.mt-30 {
+  margin-top: 1.875rem;
+}
+
+.mt-10 {
+  margin-top: 0.625rem;
+}
+
+.mt-20 {
+  margin-top: 1.25rem;
+}
+
+.mt-60 {
+  margin-top: 3.75rem;
+}
+
+.mt-70 {
+  margin-top: 4.375rem;
+}
+
+.mt-main {
+  margin-top: calc(var(--height-header) + 1.875rem);
+}
+
+/* padding */
+.p-4 {
+  padding: 0.25rem;
+}
+
+.pt-5px {
+  padding-top: 0.3125rem;
+}
+
+.py-10 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.pt-10 {
+  padding-top: 0.625rem;
+}
+
+.pt-20 {
+  padding-top: 1.25rem;
+}
+
+.py-15 {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+
+.px-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* z-index */
+.z-10 {
+  z-index: 10;
+}
+
+/* focus */
+.focus-ring:focus {
+  box-shadow: none;
+}
+
+/* flex */
+.ct-flex-around {
+  justify-content: space-around;
+}
+
+.ct-flex-nowrap-md {
+  flex-wrap: wrap;
+}
+
+.ct-flex-wrap-md {
+  flex-wrap: nowrap;
+}
+
+/* cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* scroll */
+.scroll-x-md {
+  overflow-x: initial;
+}
+
+.hidden-y-md {
+  overflow-y: inherit;
+}
+
+/* directory */
+.directory-item:hover {
+  transform: translateZ(0);
+  z-index: 1;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  box-shadow: 0 0 0.8125rem 0 rgba(0, 0, 0, 0.05);
+}
+
+/* flash sale */
+
+.fls-card {
+  height: var(--height-flashSale-img);
+  /* background-image: url('./assets/flash-sale-1.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fls-card-mail {
+  position: absolute;
+  top: 0.625rem;
+  max-width: 70%;
+
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: rgb(208, 1, 27);
+
+  font-weight: 500;
+  padding: 0 4px;
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  background: currentColor;
+  left: -0.1875rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.fls-card-mail::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -0.1875rem;
+  border-top: 0.1875rem solid;
+  border-left: 0.1875rem solid transparent;
+  -webkit-filter: brightness(60%);
+  filter: brightness(60%);
+}
+
+.fls-card-img {
+  background-image: url('./assets/mall.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 0.5rem;
+  width: 1.25rem;
+  position: relative;
+}
+
+.fls-card-discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.fls-card-discount-badge {
+  background-color: rgba(255, 212, 36, 0.9);
+  width: 36px;
+  height: 32px;
+
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  padding: 4px 2px 3px;
+  font-weight: 700;
+}
+
+.discount_badge-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  line-height: 0.8125rem;
+  color: var(--sub-color);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.fls-card-discount-badge:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -4px;
+  position: absolute;
+  border-color: transparent rgba(255, 212, 36, 0.9);
+  border-style: solid;
+  border-width: 0 18px 4px;
+}
+
+.fls-card-bottom {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* shopee mail */
+.shopee_mail-text {
+  width: 172px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-wrap: break-word;
+  overflow: hidden;
+  color: #d0011b;
+}
+
+.shoppeMall-position-text {
+  position: absolute;
+  left: 3px;
+  bottom: 10px;
+  font-size: 18px;
+}
+
+/* suggest */
+.suggest-desc {
+  min-height: 1.75rem;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 14px;
+  font-size: .75rem;
+  color: rgba(0, 0, 0, .87);
+}
+
+.suggest_desc-svg {
+  width: .25rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+}
+
+.svg_suggest-left {
+  left: 0;
+}
+
+.svg_suggest-right {
+  right: 0;
+}

@@ -1,0 +1,47 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --md-height-header: 5rem;
+    }
+    .height-header {
+        height: var(--md-height-header);
+    }
+
+    .height-banner {
+        height: fit-content;
+    }
+
+    .height-banner-top {
+        height: fit-content;
+    }
+
+    .height-directory-bottom {
+        height: fit-content;
+    }
+
+    .mt-main {
+        margin-top: calc(var(--md-height-header) + 1rem);
+    }
+
+    .scroll-x-md {
+        overflow-x: scroll;
+    }
+
+    .hidden-y-md {
+        overflow-y: hidden;
+    }
+
+    .ct-flex-around {
+        justify-content: unset;
+    }
+
+    .ct-flex-nowrap-md {
+        flex-wrap: nowrap;
+    }
+
+    .shoppeMall-position-text {
+        position: absolute;
+        left: -37px;
+        bottom: -2px;
+        font-size: 14px;
+    }
+}
